@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: -50px;
+}
+
+.inputs {
+  margin: 7px;
+  height: 29px;
+  min-width: 150px;
+  border: none;
+  border-radius: 1px;
+  font-size: medium;
+  transition: .5s;
+  border-bottom: solid white 2px;
+  background-color: rgba(255, 255, 255, 0.099);
+  color: white;
+  font-weight: 700;
+}
+
+.columb1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: -95px;
+}
+
+.columb2 {
+  flex-direction: column;
+  display: flex;
+  flex: 50%;
+  margin-left: -90px;
+  margin-top: -47px
+}
+
+.row{
+  flex-direction: row;
+}
+
+
+.form {
+  box-shadow: 0px 0px 10px 0px;
+  margin-top: -455px;
+  width: 395px;
+  border-radius: 3px;
+  padding: 10px;
+  padding-left: 17.5px;
+  background-color: rgb(126, 130, 133);
+}
+
+.inputsSubmit {
+  margin-top: 8px;
+  margin-bottom: 7px;
+  height: 39px;
+  min-width: 195px;
+  width: 390px;
+  border: none;
+  border-radius: 3px;
+  font-size: medium;
+  transition: .8s;
+}
+
+.inputsSubmit:hover {
+  background-color: rgb(166, 255, 222);
+}
+
+.inputs:hover {
+  background-color: rgba(161, 161, 161, 0.712);
+}
+
+.formTitle_button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.closeButton {
+  margin-left: 12px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 180, 180);
+  text-decoration: underline;
+  border-radius: 3px;
+  color: black;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.closeButton:hover {
+  background-color: rgb(244, 149, 149);
+  transform: rotate(180deg);
+}
+
+.formTitle {
+  color: white;
+}

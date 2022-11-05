@@ -1,0 +1,32 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #a1b9c800;
+    border-radius: 5px;
+    padding: 20px;
+    width: fit-content;
+    margin-top: -85px;
+}
+
+.card-img-top {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.interviewButton {
+    margin-top: 50px;
+    border-style: none;
+    background-color: rgb(77, 77, 77);
+    padding: 20px;
+    border-radius: 3px;
+    font-weight: 900;
+    color: white;
+    width: 75%;
+    transition: .5s;
+}
+
+.interviewButton:hover {
+    background-color: rgb(120, 120, 120);
+}

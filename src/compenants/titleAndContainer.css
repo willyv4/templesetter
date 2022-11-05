@@ -1,0 +1,49 @@
+div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BackgroundImage {
+   background-image: linear-gradient(to left, white, rgb(255, 255, 255), rgba(255, 255, 255, 0.455), rgba(255, 255, 255, 0.452)), url("https://2.bp.blogspot.com/-A0ct4mfAYXo/Ug_dr3gO4sI/AAAAAAAABaQ/cfbXvjaRRVc/s1600/IMG_4273.JPG");
+   background-size: cover;
+   background-repeat: no-repeat;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   flex-direction: row;
+   background-position: center center;
+   padding-bottom: 131px;
+   padding-top: 140px;
+   max-height: 450px;
+}
+
+.PageTitle {
+   margin-top: -20px;
+   font-size: 120px;
+   color: rgb(54, 54, 57);
+}
+
+.card-text {
+   color: rgb(54, 54, 57);
+   font-size: 45px;
+   font-weight: 600;
+   width: 800px;
+   margin-top: -10px;
+   margin-left: 0px;
+}
+
+.title-body {
+   border-radius: 5px;
+   width: 650px;
+   height: 400px;
+   background-color: rgba(255, 255, 255, 0);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-left: 80px;
+}
+
