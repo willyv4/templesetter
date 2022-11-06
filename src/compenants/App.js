@@ -1,8 +1,9 @@
 import { useRef, useState } from "react";
 import { supabase } from "../client";
+import { DayPicker } from "react-day-picker";
 import "./App.css";
+import "./DatePicker.css";
 import * as React from "react";
-import DatePicker from "./DatePicker";
 
 function App() {
   const [full_name, setFull_Name] = useState("");
@@ -10,6 +11,8 @@ function App() {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [time, setTime] = useState("");
+  const [day, setDay] = useState("");
+  // const [availability, setAvailability] = useState("false");
   const [supabaseErr, setSupabaseErr] = useState("");
 
   const [successMsgs, setSuccessMsgs] = useState("");
@@ -21,7 +24,7 @@ function App() {
     let count = 0;
 
     if (count === 0) {
-      submitData(e, full_name, ward, phone, email, time);
+      submitData(e, full_name, ward, phone, email, time, day);
     } else {
       if (timer3ref.current) {
         clearTimeout(timer3ref.current);
@@ -29,11 +32,19 @@ function App() {
     }
   };
 
-  const submitData = async function (e, full_Name, ward, phone, email, time) {
+  const submitData = async function (
+    e,
+    full_name,
+    ward,
+    phone,
+    email,
+    time,
+    day
+  ) {
     setLoading(true);
     const { data, error } = await supabase
       .from("interviews")
-      .insert([{ full_name, ward, phone, email, time }], {
+      .insert([{ full_name, ward, phone, email, time, day }], {
         returning: "minimal",
       });
     if (error) {
@@ -45,6 +56,9 @@ function App() {
       );
     }
     setLoading(false);
+    alert(
+      "Thanks for scheduling, I'll reach out to confirm your appointment within 24hrs."
+    );
     e.target.reset();
 
     setFull_Name("");
@@ -52,9 +66,13 @@ function App() {
     setPhone("");
     setEmail("");
     setTime("");
+    setDay("");
   };
 
-  const [value, setValue] = React.useState(null);
+  const dayOfWeekMatcher: DayOfWeek = {
+    dayOfWeek: [0, 1, 2, 3, 5, 6],
+  };
+  const disabledDays = [dayOfWeekMatcher];
 
   return (
     <div className="center">
@@ -124,16 +142,33 @@ function App() {
             </datalist>
           </div>
         </div>
-        <DatePicker />
+        <div className="daypicker">
+          <DayPicker
+            defaultMonth={new Date(2022, 5, 10)}
+            disabled={disabledDays}
+            mode="single"
+            selected={day}
+            onSelect={setDay}
+            onChange={(e) => setDay(e.target.value)}
+          />
+          <div>
+            <input
+              className="input1"
+              placeholder="Pick a date"
+              value={day}
+              onChange={(e) => setDay(e.target.value)}
+            ></input>
+          </div>
+        </div>
         <input
           className="inputsSubmit"
           type="submit"
           value={loading === true ? "waiting..." : "Submit"}
           disabled={loading}
         />
-        <span style={{ color: "lightgreen", display: "block" }}>
+        {/* <span style={{ color: "lightgreen", display: "block" }}>
           {successMsgs}
-        </span>
+        </span> */}
         <span style={{ color: "red", display: "block" }}>{supabaseErr}</span>
       </form>
     </div>

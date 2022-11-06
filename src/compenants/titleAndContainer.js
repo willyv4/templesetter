@@ -1,10 +1,8 @@
 import CardButton from "./card";
+import ImageSlider from "./templeImages";
 import "./titleAndContainer.css";
 
 function BackgroundImageBox() {
-  //   const [showComponent, setShowComponent] = useState(false);
-  //   const handleClick = () => setShowComponent(!showComponent);
-
   return (
     <div className="BackgroundImage">
       <div className="title-body">
@@ -16,6 +14,7 @@ function BackgroundImageBox() {
         </div>
       </div>
       <CardButton />
+      <ImageSlider />
     </div>
   );
 }
