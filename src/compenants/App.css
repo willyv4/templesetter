@@ -1,8 +1,11 @@
-.App {
+.center {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-left: -50px;
+  margin-left: 125px;
+  margin-top: -20px;
+  position: absolute;
+  z-index: 2;
 }
 
 .inputs {
@@ -40,12 +43,13 @@
 
 .form {
   box-shadow: 0px 0px 10px 0px;
-  margin-top: -455px;
   width: 395px;
   border-radius: 3px;
   padding: 10px;
   padding-left: 17.5px;
   background-color: rgb(126, 130, 133);
+  position: absolute;
+  z-index: 3;
 }
 
 .inputsSubmit {

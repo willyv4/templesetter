@@ -7,7 +7,6 @@ div {
 }
 
 .BackgroundImage {
-   background-image: linear-gradient(to left, white, rgb(255, 255, 255), rgba(255, 255, 255, 0.455), rgba(255, 255, 255, 0.452)), url("https://2.bp.blogspot.com/-A0ct4mfAYXo/Ug_dr3gO4sI/AAAAAAAABaQ/cfbXvjaRRVc/s1600/IMG_4273.JPG");
    background-size: cover;
    background-repeat: no-repeat;
    align-items: center;
@@ -18,19 +17,20 @@ div {
    padding-bottom: 131px;
    padding-top: 140px;
    max-height: 450px;
+   max-width: 100%;
 }
 
 .PageTitle {
    margin-top: -20px;
    font-size: 120px;
-   color: rgb(54, 54, 57);
+   color: rgba(0, 0, 0, 0.725);
 }
 
 .card-text {
-   color: rgb(54, 54, 57);
+   color: rgba(0, 0, 0, 0.725);
    font-size: 45px;
    font-weight: 600;
-   width: 800px;
+   width: 600px;
    margin-top: -10px;
    margin-left: 0px;
 }
@@ -47,3 +47,74 @@ div {
    padding-left: 80px;
 }
 
+@media only screen and (max-width: 900px) {
+      .BackgroundImage {
+         background-size: cover;
+         background-repeat: no-repeat;
+         align-items: center;
+         justify-content: center;
+         display: flex;
+         flex-direction: column;
+         background-position: center center;
+         max-height: 450px;
+         max-width: 110%;
+         overflow-y: scroll;
+         overflow-x: hidden;
+      }
+      .PageTitle {
+         font-size: 500%;
+         position: relative;
+         margin-top: -100px;
+         align-items: center;
+         margin-left: auto;
+         margin-right: auto;
+         width: fit-content;
+      }
+      
+      .card-text {
+         color: rgba(0, 0, 0, 0.725);
+         font-size: 225%;
+         font-weight: 600;
+         width: 500px;
+         margin-left: 200px;
+         position: relative;
+         margin-top: -700px;
+         text-align: center;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      .title-body {
+         border-radius: 5px;
+         width: 650px;
+         height: 400px;
+         background-color: rgba(255, 255, 255, 0);
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         text-align: center;
+         margin-left: 60px;
+      }
+ }
+
+ @media only screen and (max-width: 450px) {
+   .PageTitle {
+      font-size: 400%;
+      position: relative;
+      margin-top: -100px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 300px;
+      text-align: center;
+   }
+   
+   .card-text {
+      color: rgba(0, 0, 0, 0.725);
+      font-size: 185%;
+      font-weight: 600;
+      width: 350px;
+      position: relative;
+      margin-top: -800px;
+      text-align: center;
+   }
+}

@@ -3,30 +3,49 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #a1b9c800;
-    border-radius: 5px;
-    padding: 20px;
-    width: fit-content;
-    margin-top: -85px;
+    background-image: linear-gradient(to left, white, white, white, white,rgb(255, 255, 255),  rgba(255, 255, 255, 0.587), rgba(255, 255, 255, 0));
+    width: 500px;
+    position: absolute;
+    z-index: 1;
+    height: 115%;
+    margin-left: -150px;
 }
 
 .card-img-top {
-    width: 300px;
+    width: 260px;
     border-radius: 5px;
+    margin-left: 200px;
+    margin-top: -130px;
 }
 
 .interviewButton {
-    margin-top: 50px;
+    margin-top: 80px;
     border-style: none;
     background-color: rgb(77, 77, 77);
     padding: 20px;
     border-radius: 3px;
     font-weight: 900;
     color: white;
-    width: 75%;
+    width: 45%;
     transition: .5s;
+    margin-left: 200px;
 }
 
 .interviewButton:hover {
     background-color: rgb(120, 120, 120);
 }
+
+@media only screen and (max-width: 900px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient( white, white, white, white,rgb(255, 255, 255),  rgb(255, 255, 255), rgb(255, 255, 255));
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        height: fit-content;
+        margin-left: -50px;
+    }
+  }
