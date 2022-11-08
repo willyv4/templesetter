@@ -23,15 +23,12 @@ code {
   
   html {
     height: 800px;
-    overflow-x: hidden;
   }
   
   body {
-   overflow-x: hidden;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   margin-left: -40px;
   }
 }

@@ -364,13 +364,13 @@
     border-radius: 0;
   }
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 500px) {
     .input1 {
         width: 100px;
         transition: .5s;
         border-bottom: solid white 2px;
         margin-top: -758px;
-        margin-right: -159px;
+        margin-right: -135px;
       }
 
       .daypicker {
