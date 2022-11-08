@@ -103,18 +103,19 @@
 @media only screen and (max-width: 500px) {
   .form {
     box-shadow: 0px 0px 10px 0px;
-    width: 390px;
+    width: 340px;
     border-radius: 3px; 
     background-color: rgb(126, 130, 133);
     position: absolute;
     z-index: 3;
-    margin-left: 70px;
+    justify-content: center;
+    align-items: center;
   }
 
   .inputs {
     margin: 7px;
     height: 29px;
-    min-width: 125px;
+    width: 100px;
     border: none;
     border-radius: 1px;
     font-size: medium;
@@ -123,5 +124,10 @@
     background-color: rgba(255, 255, 255, 0.099);
     color: white;
     font-weight: 700;
+  }
+  .inputsSubmit {
+    min-width: 195px;
+    width: 331px;
+    margin-left: -13px;
   }
 }
