@@ -27,6 +27,7 @@
     font-weight: 900;
     color: white;
     width: 45%;
+    min-width: 250px;
     transition: .5s;
     margin-left: 200px;
 }
@@ -45,7 +46,6 @@
         width: 100%;
         position: relative;
         z-index: 1;
-        height: fit-content;
-        margin-left: -50px;
+        margin-left: -60px;
     }
   }

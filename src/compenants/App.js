@@ -79,7 +79,7 @@ function App() {
       <form className="form" onSubmit={handleSubmit}>
         <div className="formTitle_button_container">
           <h2 className="formTitle">Interview Scheduler</h2>
-          <a href="http://localhost:3000/">
+          <a href="https://simplyschedule.netlify.app/">
             <div className="closeButton">
               <svg
                 stroke="currentColor"

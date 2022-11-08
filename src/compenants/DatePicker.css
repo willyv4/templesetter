@@ -363,3 +363,21 @@
   .rdp-day_range_middle {
     border-radius: 0;
   }
+
+  @media only screen and (max-width: 450px) {
+    .input1 {
+        margin: 10px;
+        height: 29px;
+        min-width: 150px;
+        border: none;
+        border-radius: 1px;
+        font-size: medium;
+        transition: .5s;
+        border-bottom: solid white 2px;
+        background-color: rgba(255, 255, 255, 0.099);
+        color: white;
+        font-weight: 700;
+        margin-top: -742px;
+        margin-right: -180px;
+      }
+  }
