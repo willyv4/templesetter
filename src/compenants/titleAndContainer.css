@@ -57,7 +57,7 @@ div {
          flex-direction: column;
          background-position: center center;
          max-height: 450px;
-         max-width: 110%;
+         max-width: 100%;
          overflow-y: scroll;
          overflow-x: hidden;
       }
@@ -129,6 +129,9 @@ div {
       max-width: 100%;
       overflow-y: scroll;
       overflow-x: hidden;
+   }
+   .title-body {
+      margin-left: 20px;
    }
    
 }
