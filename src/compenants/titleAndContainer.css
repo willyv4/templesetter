@@ -117,4 +117,18 @@ div {
       margin-top: -800px;
       text-align: center;
    }
+   .BackgroundImage {
+      background-size: cover;
+      background-repeat: no-repeat;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      background-position: center center;
+      max-height: 450px;
+      max-width: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden;
+   }
+   
 }
