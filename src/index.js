@@ -2,8 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-// import BackgroundImageBox from "./compenants/titleAndContainer";
-import ImageSlider from "./compenants/slidercompenant/templeImages";
 import BackgroundImageBox from "./compenants/titleAndContainer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
