@@ -12,7 +12,6 @@ function App() {
   const [email, setEmail] = useState("");
   const [time, setTime] = useState("");
   const [day, setDay] = useState("");
-  // const [availability, setAvailability] = useState("false");
   const [supabaseErr, setSupabaseErr] = useState("");
 
   const [successMsgs, setSuccessMsgs] = useState("");
@@ -144,7 +143,6 @@ function App() {
         </div>
         <div className="daypicker">
           <DayPicker
-            defaultMonth={new Date(2022, 5, 10)}
             disabled={disabledDays}
             mode="single"
             selected={day}
@@ -166,9 +164,6 @@ function App() {
           value={loading === true ? "waiting..." : "Submit"}
           disabled={loading}
         />
-        {/* <span style={{ color: "lightgreen", display: "block" }}>
-          {successMsgs}
-        </span> */}
         <span style={{ color: "red", display: "block" }}>{supabaseErr}</span>
       </form>
     </div>
