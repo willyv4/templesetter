@@ -47,7 +47,7 @@
   border-radius: 3px;
   padding: 10px;
   padding-left: 17.5px;
-  background-color: rgb(126, 130, 133);
+  background-color: rgb(83, 94, 102);
   position: absolute;
   z-index: 3;
 }
@@ -118,7 +118,7 @@
     box-shadow: 0px 0px 10px 0px;
     width: 340px;
     border-radius: 3px; 
-    background-color: rgb(126, 130, 133);
+    background-color: rgb(83, 94, 102);
     position: relative;
     margin-bottom:0px;
     padding-left: 28px;
@@ -142,5 +142,15 @@
     min-width: 195px;
     width: 331px;
     margin-left: -13px;
+  }
+  .columb2 {
+    margin-right: -26px;
+  }
+  .columb1 {
+    margin-left: -96px;
+  }
+  .inputsSubmit {
+    border-radius: 3px;
+    margin-left: -15px;
   }
 }
