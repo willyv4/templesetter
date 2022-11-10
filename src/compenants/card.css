@@ -60,4 +60,7 @@
         width: 0;
         
     }
+    .card-img-top {
+        margin-top: 50px;
+    }
   }
