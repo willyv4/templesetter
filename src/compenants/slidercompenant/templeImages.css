@@ -115,9 +115,9 @@
     }
 
     .templeBackground {
-       margin-top: 150px;
+       margin-top: 50px;
        margin-bottom: -150px;
         margin-left: -280px;
-        min-height: 550px;
+        height: 450px;
     }
  }

@@ -7,6 +7,7 @@ function BackgroundImageBox() {
     <div className="BackgroundImage">
       <ImageSlider></ImageSlider>
       <CardButton />
+      {/* <div></div> */}
     </div>
   );
 }
