@@ -24,6 +24,7 @@
     font-weight: 700;
     margin-top: -742px;
     margin-right: -189px;
+    max-width: 200px;
   }
 
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
