@@ -90,8 +90,8 @@ export default function ImageSlider() {
               copyright: "Mark Petty",
             },
             {
-              name: "LDS TEMPLE",
-              url: "https://churchofjesuschristtemples.org/assets/img/temples/montreal-quebec-temple/montreal-quebec-temple-10671-main.jpg",
+              name: "LDS TEMPLE", //
+              url: "https://i.pinimg.com/originals/dd/ef/5d/ddef5d67924695ee67e72b989e33c1dc.jpg",
               copyright: "Jeff Christensen",
             },
             {

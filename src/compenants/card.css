@@ -50,3 +50,14 @@
         margin-bottom: 100px;
     }
   }
+
+  @media only screen and (max-width: 500px) {
+    .interviewButton {
+        margin-top: 100px;
+        margin-bottom: 80px;
+    }
+    .card {
+        width: 0;
+        
+    }
+  }

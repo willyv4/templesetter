@@ -93,15 +93,15 @@
 }
  
 @media only screen and (max-width: 450px) {
-    .PageTitle {
+    /* .PageTitle {
        font-size: 400%;
        position: relative;
-       margin-top: -100px;
+       margin-top: 100px;
        margin-left: auto;
        margin-right: auto;
        text-align: center;
        width: 200px;
-    }
+    } */
     
     .card-text {
        color: rgba(0, 0, 0, 0.725);
@@ -115,6 +115,9 @@
     }
 
     .templeBackground {
+       margin-top: 150px;
+       margin-bottom: -150px;
         margin-left: -280px;
+        min-height: 550px;
     }
  }
