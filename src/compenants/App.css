@@ -20,12 +20,18 @@
   background-color: rgba(255, 255, 255, 0.099);
   color: white;
   font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .columb1 {
   display: flex;
   flex-direction: column;
-  margin-right: 94px;
+  margin-right: 5px;
+  margin-left: -9px;
   position: relative;
 }
 
@@ -33,13 +39,15 @@
   flex-direction: column;
   display: flex;
   flex: 50%;
-  margin-left: 130px;
+  margin-left: -10px;
   margin-top: -47px;
-  position: absolute
 }
 
 .row{
   flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -147,10 +155,10 @@
     margin-left: -13px;
   }
   .columb2 {
-    margin-right: -26px;
+    margin-right: -5px;
   }
   .columb1 {
-    margin-left: -96px;
+    margin-left: -36px;
   }
   .inputsSubmit {
     border-radius: 3px;
