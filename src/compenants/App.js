@@ -139,6 +139,14 @@ function App() {
               <option value="7:40PM" />
               <option value="7:30PM" />
             </datalist>
+            <div>
+              <input
+                className="inputs"
+                placeholder="Pick a date"
+                value={day}
+                onChange={(e) => setDay(e.target.value)}
+              ></input>
+            </div>
           </div>
         </div>
         <div className="daypicker">
@@ -149,14 +157,6 @@ function App() {
             onSelect={setDay}
             onChange={(e) => setDay(e.target.value)}
           />
-          <div>
-            <input
-              className="input1"
-              placeholder="Pick a date"
-              value={day}
-              onChange={(e) => setDay(e.target.value)}
-            ></input>
-          </div>
         </div>
         <input
           className="inputsSubmit"

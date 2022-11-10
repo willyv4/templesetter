@@ -24,6 +24,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  max-width: 200px;
 
 }
 
@@ -156,11 +157,13 @@
     margin-left: -16px;
   }
   .columb2 {
-    position: absolute;
-    margin-left: 155px;
+    position: relative;
+    margin-top: 0px;
+    margin-left: 2px;
+    margin-right: -5px;
   }
   .columb1 {
     position: relative;
-    margin-left: -185px;
+    margin-left: -23px;
   }
 }
